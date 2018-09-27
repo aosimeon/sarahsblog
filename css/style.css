@@ -1,0 +1,438 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 1.6;
+  font-size: 15.5px;
+  background-color: #f6d5e8;
+}
+
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.main-nav {
+  width: 100%;
+  overflow: hidden;
+  background: #d12e8d;
+}
+
+.main-nav ul {
+  list-style-type: none;
+}
+
+.main-nav li {
+  display: inline-block;
+  color: #fff;
+  padding: 10px 15px;
+  margin-left: -4px;
+  transition: 0.6s;
+}
+
+.main-nav li:nth-child(1) {
+  padding: 10px 15px 10px 18px;
+}
+
+.main-nav li:last-child {
+  float: right;
+}
+
+.main-nav li:hover {
+  background-color: #fff;
+  color: #d12e8d;
+}
+
+.header-title {
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f6d5e8;
+}
+
+.header-title h1 {
+  margin-bottom: 20px;
+  font-weight: 200;
+}
+
+.header-title p span {
+  background-color: #99c43c;
+  border-radius: 5px;
+  padding: 5px 5px;
+}
+
+#hero {
+  height: 130vh;
+  width: 100%;
+  background-image: url("../img/jane.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.hero-text {
+  animation-delay: 0.8s;
+  animation-duration: 4s;
+}
+
+.hero-text h1 {
+  margin: 15px 30px;
+  font-size: 3rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #faeaf4;
+}
+
+.hero-text a {
+  display: inline-block;
+  margin: 15px 30px;
+  text-decoration: none;
+  padding: 15px 25px;
+  background-color: #99c43c;
+  color: #000;
+  transition: 1s;
+}
+
+.hero-text a:hover {
+  opacity: 0.6;
+}
+
+main {
+  background-color: #f6d5e8;
+  width: 65%;
+  float: left;
+}
+
+aside {
+  background-color: #f6d5e8;
+  width: 35%;
+  float: right;
+  padding-top: 2rem;
+  padding-right: 2rem;
+}
+
+#main-section {
+  padding: 2rem;
+}
+
+article {
+  background: #fff;
+  border-radius: 2px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+article p {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+article a {
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+  border: 1px solid #ccc;
+  padding: 5px 15px;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+article a:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+a.reply-btn {
+  float: right;
+  background-color: #99c43c;
+  color: #000;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+}
+
+a.like-btn {
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+}
+.post-img img {
+  width: 100%;
+}
+
+.post-title,
+.post-desc {
+  text-align: center;
+}
+
+.post-title {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.post-desc span {
+  opacity: 0.6;
+}
+
+.comment-section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+}
+
+.comment-title span {
+  opacity: 0.6;
+  font-size: 0.9rem;
+}
+
+.user-pic {
+  width: 12.5%;
+}
+
+.user-pic img {
+  width: 100%;
+}
+
+.user-comment {
+  padding: 0 1rem;
+}
+
+aside h2 {
+  background-color: #99c43c;
+  color: #000;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+}
+
+aside p {
+  padding: 0 1rem 1rem 1rem;
+}
+
+aside > div {
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+aside img {
+  width: 100%;
+}
+
+.about-me {
+  background-color: #99c43c;
+  color: #000;
+}
+
+.about-me img {
+  border-bottom: 1px solid #fff;
+}
+
+.pposts {
+  display: flex;
+  padding: 0.5rem 1rem;
+  transition: 0.5s;
+  margin-bottom: 0;
+}
+
+.pposts:hover {
+  background-color: #e481bb;
+  opacity: 0.9;
+}
+
+.pposts p {
+  padding: 0 0.5rem 0.2rem 0.5rem;
+}
+
+.ppost-img {
+  width: 12.5%;
+}
+
+.pposts img {
+  width: 100%;
+  height: 100%;
+}
+
+.ad-block p {
+  width: 100%;
+  height: 35vh;
+  background-color: #e6e6e6;
+  text-align: center;
+  padding-top: 25%;
+}
+
+.ad-block {
+  padding: 1rem;
+}
+
+.tags p {
+  padding: 0.5rem;
+}
+
+.tags span {
+  display: inline-block;
+  padding: 0.3rem;
+  background: #edabd2;
+  margin: 0.2rem 0.1rem;
+}
+
+.tags span.active {
+  background-color: #d12e8d;
+  color: #fff;
+}
+
+.inspiration {
+  width: 100%;
+}
+
+.inspiration-imgs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0.7rem;
+  grid-gap: 0.7rem;
+}
+
+.inspiration img {
+  width: 100%;
+}
+
+.follow-me ul {
+  list-style-type: none;
+}
+
+.follow-me li {
+  display: inline-block;
+  color: #000;
+  padding: 10px 15px;
+}
+
+.follow-me .fa-twitter {
+  transition: 0.5s;
+}
+.follow-me .fa-twitter:hover {
+  color: #4da6ff;
+}
+
+.follow-me .fa-facebook-official,
+.follow-me .fa-linkedin {
+  transition: 0.5s;
+}
+
+.follow-me .fa-facebook-official:hover,
+.follow-me .fa-linkedin:hover {
+  color: #004d99;
+}
+
+.follow-me .fa-snapchat {
+  transition: 0.5s;
+}
+
+.follow-me .fa-snapchat:hover {
+  color: #e6b800;
+}
+
+.follow-me .fa-instagram {
+  transition: 0.5s;
+}
+
+.follow-me .fa-instagram:hover {
+  color: purple;
+}
+
+.follow-me i {
+  font-size: 2rem;
+}
+
+.subscribe form {
+  padding: 0 1rem 1rem 1rem;
+}
+.subscribe input {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.7rem;
+  height: 2.5rem;
+  padding: 0.5rem;
+}
+
+.subscribe input[type="submit"] {
+  background-color: #d12e8d;
+  border: none;
+  font-size: 1rem;
+  color: #000;
+  opacity: 0.9;
+  transition: 0.3s;
+}
+
+.subscribe input[type="submit"]:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  opacity: 1;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.subscribe p {
+  padding-top: 1rem;
+}
+
+footer {
+  height: 25vh;
+  background-color: #d12e8d;
+}
+
+footer a {
+  display: inline-block;
+  text-decoration: none;
+  margin: 1.8rem;
+  background: #99c43c;
+  padding: 1rem;
+  color: #000;
+  transition: 0.5s;
+}
+
+footer a:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+footer small {
+  display: block;
+  margin: 1.7rem;
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 980px) {
+  main {
+    background-color: #f6d5e8;
+    width: 100%;
+    float: none;
+  }
+
+  aside {
+    background-color: #f6d5e8;
+    width: 100%;
+    float: none;
+    padding: 2rem;
+  }
+
+  .ad-block p {
+    width: 100%;
+    height: 35vh;
+    background-color: #e6e6e6;
+    text-align: center;
+    padding-top: 12.5%;
+  }
+
+  .ad-block {
+    padding: 1rem;
+  }
+}
